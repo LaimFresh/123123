@@ -32,10 +32,10 @@ const publicPath = path.join(__dirname, 'public'); // Путь к папке pub
 app.use(express.static(publicPath));
 // Подключение к MySQL
 const pool = mysql.createPool({
-    host: process.env.MYSQL_HOST || 'localhost', // Host из Railway
-    user: process.env.MYSQL_USER || 'root',     // User из Railway
-    password: process.env.MYSQL_PASSWORD || '', // Password из Railway
-    database: process.env.MYSQL_DATABASE || 'real_estate_db', // Database из Railway
+    host: process.env.MYSQL_HOST || 'bydxdw0ubavive0jxvde-mysql.services.clever-cloud.com', // Host из Railway
+    user: process.env.MYSQL_USER || 'u9q6qotu5eoiaazk',     // User из Railway
+    password: process.env.MYSQL_PASSWORD || 'rk8chGBlnOPxHx8EMQka', // Password из Railway
+    database: process.env.MYSQL_DATABASE || 'bydxdw0ubavive0jxvde', // Database из Railway
     port: process.env.MYSQL_PORT || 3306,       // Port из Railway
     waitForConnections: true,
     connectionLimit: 10,
